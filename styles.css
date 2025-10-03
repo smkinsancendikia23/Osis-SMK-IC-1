@@ -41,8 +41,8 @@ body {
   background-color: var(--black-color);
   color: var(--white-color);
   font-weight: 700;
-  overflow-x: hidden;
-  overflow-y: auto;     
+  overflow-x: hidden;   /* biar horizontal ga scroll */
+  overflow-y: auto;     /* biar vertikal bisa scroll */
 }
 
 h1, h2 {
@@ -316,3 +316,4 @@ img {
   left: 66.6%;
 
 }
+
