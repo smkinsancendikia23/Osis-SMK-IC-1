@@ -41,7 +41,8 @@ body {
   background-color: var(--black-color);
   color: var(--white-color);
   font-weight: 700;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;     
 }
 
 h1, h2 {
@@ -313,4 +314,5 @@ img {
 .third {
   background-color: var(--first-color);
   left: 66.6%;
+
 }
