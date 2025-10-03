@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <title>Osis SMK IC</title>
+        <style>
+            .contact__input {
+                border: 2px solid #fff;
+                background: transparent;
+                color: #fff;
+                padding: 10px;
+                font-size: 1rem;
+                transition: all 0.3s ease-in-out;
+            }
+            .contact__input:hover, .contact__input:focus {
+                border-color: #4E1116;
+                background: rgba(255, 255, 255, 0.1);
+                outline: none;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- OVERLAY -->
+        <div class="overlay first"></div>
+        <div class="overlay second"></div>
+        <div class="overlay third"></div>
+
+        <!-- HEADER -->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="index.html" class="nav__logo">Osis SMK IC</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">Proker Osis SMK IC</a></li>
+                        <li class="nav__item"><a href="journey.html" class="nav__link">Visi Misi</a></li>
+                        <li class="nav__item"><a href="gallerykegiatan.html" class="nav__link">Gallery kegiatan</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <ion-icon name="menu"></ion-icon>
+                </div>
+            </nav>
+        </header>
+
+        <!-- MAIN -->
+        <main class="l-main bd-grid">
+            <div class="contact">
+                <div class="contact__information">
+                    <h1 class="contact__title anime-text">Get in Touch</h1>
+                </div>
+                <form class="contact__form anime-text" action="#" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" class="contact__input" required>
+                    <input type="email" name="email" placeholder="Your Email" class="contact__input" required>
+                    <textarea name="message" placeholder="Your Message" class="contact__input" required></textarea>
+                    <button type="submit" class="home__button">Send Message</button>
+                </form>
+            </div>
+        </main>
+
+        <!-- GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+        <!-- MAIN -->
+        <script src="main.js"></script>
+    
+        <!-- ICONS -->
+        <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    
+        <script>
+            document.getElementById('nav-toggle').addEventListener('click', function() {
+                document.getElementById('nav-menu').classList.toggle('show');
+            });
+        
+            gsap.from('.contact__information', {opacity: 0, duration: 2, delay: 1, y: 50});
+            gsap.from('.contact__form', {opacity: 0, duration: 2, delay: 1.5, y: 50});
+        </script>
+    </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visi & Misi OSIS</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+    }
+
+    .about {
+      padding-top: 6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .about__content {
+      max-width: 800px;
+      padding: 20px;
+    }
+
+    .about__title {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      font-weight: bold;
+      color: #9c9c9c;
+    }
+
+    .about__subtitle {
+      font-size: 1.8rem;
+      margin: 1.5rem 0 1rem;
+      color: #ffffff;
+    }
+
+    .about__description1 {
+      font-size: 1.1 rem;
+      line-height: 1.5;
+      margin-bottom: 0.8rem;
+    }
+    .about__description2 {
+      font-size: 1.1 rem;
+      line-height: 1.5;
+      margin-bottom: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <a href="index.html" class="nav__logo">Proker OSIS</a>
+      </div>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="about.html" class="nav__link active">Proker Osis</a></li>
+          <li class="nav__item"><a href="gallerykegiatan.html" class="nav__link">Gallery Kegiatan</a></li>
+          <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav__toggle" id="nav-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <main class="l-main">
+    <section class="about bd-grid">
+      <div class="about__content">
+        <h1 class="about__title">Visi & Misi OSIS SMK IC</h1>
+
+        <h2 class="about__subtitle">Visi</h2>
+        <p class="about__description2">Mewujudkan sekolah yang sehat, disiplin, aktif, berprestasi, dan berkarakter melalui kegiatan antara fisik, akademik, dan pembiasaan positif.</p>
+
+        <h2 class="about__subtitle">Misi</h2>
+        <p class="about__description1">• menumbuhkan gaya hidup sehat lewat senam sehat bulanan, fun run, dan jalan sehat.</p>
+        <p class="about__description1">• Membentuk disiplin & tanggung jawab melalui sistem point per-anak & per-kelas, piala bergilir, self-reward wall, dan jadwal piket & kebersihan kelas.</p>
+        <p class="about__description1">• Memperkuat solidaritas & sportivitas lewat class meeting, kegiatan rekreasi, dan lomba kebersihan kelas bulanan.</p>
+        <p class="about__description1">• Meningkatkan prestasi akademik & non-akademik lewat olimpiade, lomba akademik eksternal, O2SN, dan partisipasi lomba lainnya.</p>
+        <p class="about__description1">• Menumbuhkan kepedulian lingkungan melalui bank sampah, recycle & daur ulang sampah menjadi dana OSIS, dan penghijauan/green school.</p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    gsap.from('.about__title', {opacity: 0, duration: 2, y: -50, ease: 'expo.out'});
+    gsap.from('.about__subtitle', {opacity: 0, duration: 2, delay: 0.5, y: -30, ease: 'expo.out', stagger: 0.3});
+    gsap.from('.about__description1', {opacity: 0, duration: 2, delay: 1, y: -20, ease: 'expo.out', stagger: 0.2});
+    gsap.from('.about__description2', {opacity: 0, duration: 2, delay: 1, y: -20, ease: 'expo.out', stagger: 0.2});
+  </script>
+</body>
+</html>
